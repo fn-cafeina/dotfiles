@@ -18,15 +18,20 @@ set background=dark
 set termguicolors
 set lazyredraw
 set ttyfast
+set noshowmode
 
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
 Plug 'ayu-theme/ayu-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
 colorscheme ayu
+
+let g:airline#extensions#tabline#enabled = 1
 
 let mapleader = " "
 
