@@ -43,6 +43,4 @@ nnoremap <Leader>sv :vsplit<CR>
 nnoremap <Leader>l <C-w>w
 nnoremap <Leader>h <C-w>W
 
-nnoremap <Leader>* *
-
 nnoremap <Leader><Leader> :noh<CR>
