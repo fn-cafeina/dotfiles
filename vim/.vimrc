@@ -42,8 +42,8 @@ let g:NERDTreeWinPos = "right"
 
 let mapleader = " "
 
-nnoremap <Leader>bn :bnext<CR>
-nnoremap <Leader>bp :bprevious<CR>
+nnoremap <C-Right> :bnext<CR>
+nnoremap <C-Left> :bprevious<CR>
 nnoremap <Leader>bd :bd<CR>
 
 nnoremap <Leader>w :w<CR>
@@ -58,3 +58,8 @@ nnoremap <C-h> <C-w>W
 nnoremap <Leader><Leader> :noh<CR>
 
 nnoremap <Leader>e :NERDTreeToggle<CR>
+
+nnoremap x "_x
+vnoremap d "_d
+nnoremap dd "_dd
+nnoremap D "_D
