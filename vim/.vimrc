@@ -1,4 +1,3 @@
-set mouse=a
 set number
 set numberwidth=2
 set clipboard=unnamedplus
@@ -19,6 +18,8 @@ set termguicolors
 set lazyredraw
 set ttyfast
 set noshowmode
+set encoding=UTF-8
+set t_RV=
 
 call plug#begin()
 
@@ -29,6 +30,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'townk/vim-autoclose'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
