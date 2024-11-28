@@ -26,12 +26,18 @@ Plug 'tpope/vim-sensible'
 Plug 'ayu-theme/ayu-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
 colorscheme ayu
 
 let g:airline#extensions#tabline#enabled = 1
+
+let g:NERDSpaceDelims = 1
+
+let g:NERDTreeWinPos = "right"
 
 let mapleader = " "
 
@@ -45,7 +51,9 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>sh :split<CR>
 nnoremap <Leader>sv :vsplit<CR>
 
-nnoremap <Leader>l <C-w>w
-nnoremap <Leader>h <C-w>W
+nnoremap <C-l> <C-w>w
+nnoremap <C-h> <C-w>W
 
 nnoremap <Leader><Leader> :noh<CR>
+
+nnoremap <Leader>e :NERDTreeToggle<CR>
