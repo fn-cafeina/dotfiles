@@ -34,6 +34,7 @@ call plug#end()
 colorscheme ayu
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 let g:NERDSpaceDelims = 1
 
