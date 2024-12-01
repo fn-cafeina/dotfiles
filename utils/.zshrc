@@ -8,7 +8,11 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="half-life"
 
 # Plugins
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(
+  git 
+  zsh-autosuggestions 
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
