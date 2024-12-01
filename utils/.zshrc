@@ -5,7 +5,7 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
-ZSH_THEME="robbyrussell"
+ZSH_THEME="half-life"
 
 # Plugins
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
