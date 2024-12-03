@@ -23,5 +23,6 @@
   "editor.glyphMargin": false,
   "editor.showFoldingControls": "never",
   "window.menuBarVisibility": "toggle",
-  "editor.linkedEditing": true
+  "editor.linkedEditing": true,
+  "window.title": ""
 }
