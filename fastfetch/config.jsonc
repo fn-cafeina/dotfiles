@@ -9,10 +9,6 @@
   },
   "modules": [
     {
-      "type": "custom",
-      "format": ""
-    },
-    {
       "type": "os",
       "key": "󰣇 ",
       "keyColor": "38;2;116;223;255;"
@@ -41,11 +37,6 @@
       "type": "memory",
       "key": " ",
       "keyColor": "38;2;116;223;255;"
-    },
-    {
-      "type": "custom",
-      "format": ""
     }
   ]
 }
-
