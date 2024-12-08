@@ -7,7 +7,7 @@
 
       "XF86MonBrightness{Up,Down}" = "brightnessctl set 10%{+,-}";
 
-      "XF86AudioRaiseVolume" = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
+      "XF86AudioRaiseVolume" = "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+";
       "XF86AudioLowerVolume" = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
       "XF86AudioMute" = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
       "XF86AudioMicMute" = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
