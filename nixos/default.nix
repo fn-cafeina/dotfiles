@@ -5,6 +5,8 @@
     [ 
       ./hardware-configuration.nix
       ./home-manager.nix
+      ./sound.nix
+      ./security.nix
     ];
 
   boot = {
@@ -22,6 +24,8 @@
       "quiet"
       "systemd.show_status=auto"
       "rd.udev.log_level=3"
+      "nowatchdog"
+      "nmi_watchdog=0"
     ];
 
     loader = {
@@ -90,14 +94,6 @@
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
 
   fonts.packages = with pkgs; [
     noto-fonts
