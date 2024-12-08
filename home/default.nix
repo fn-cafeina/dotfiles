@@ -1,8 +1,11 @@
 { pkgs, ... }:
 
 {
-  home.username = "cafeina";
-  home.homeDirectory = "/home/cafeina";
+  home = {
+    username = "cafeina";
+    homeDirectory = "/home/cafeina";
+    stateVersion = "24.11";
+  };
 
   home.packages = with pkgs; [
     fastfetch
@@ -46,8 +49,6 @@
       "super + {_,shift + }w" = "bspc node -{c,k}";
     };
   };
-
-  home.stateVersion = "24.11";
 
   programs.home-manager.enable = true;
 }
