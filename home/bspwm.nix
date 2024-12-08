@@ -19,5 +19,11 @@
       borderless_monocle = true;
       gapless_monocle = true;
     };
+
+    extraConfig = ''
+      # Unmute audio and mic on bspwm startup
+      wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+      wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+    '';
   };
 }
