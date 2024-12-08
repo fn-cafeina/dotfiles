@@ -1,0 +1,19 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d        
+
+bspc config border_width         0
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+xsetroot -cursor_name left_ptr &
+feh --bg-scale ~/Imágenes/wallpapers/4.jpg &
+picom &
+polybar &
+xinput set-prop '9' 'libinput Accel Speed' 0.5 &
+xinput set-prop '13' 'libinput Accel Speed' 0.3 &
