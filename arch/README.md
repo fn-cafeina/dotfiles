@@ -1,2 +1,2 @@
 # My old archlinux dotfiles
-I am currently moving to NixOs and I don't want to just delete or forget about it, so I decided to make a separate section for it.
+Currently, if I haven't already, I'm moving to NixOS and I don't want to just delete it or forget about it. So, I've decided to create a separate section to address it.
